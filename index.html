@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<body id="top">
+    <header id="header">
+      <a href="{{ site.url }}" class="image avatar"><img class="editable" src="/images/avatar.jpg" alt="{{ site.author.name }}" /></a>
+      
+      <h1 class="editable"><font size="4" color="#ffffff">Dennis Wu</font></h1>
+      <a href="index.html"><h1 class="editable"><font size="3" color="#ffffff">Profile</font></h1>
+      <a href="blog.html"><h1 class="editable"><font size="3" color="#ffffff">Blog</font></h1>
+    </header>
+</body>
 <div id="main">
   <section>
     {% for post in site.posts limit:1 %}
