@@ -22,21 +22,11 @@ layout: default
                   
               </div>
         </section>
-        <section id="school_logo" class="main">
+        <section id="seducation" class="main">
               <header class="major">
                   <h2>Education</h2>
               </header>
-              <ul class="features">
-                  {% for item in site._school_logo %}
-                  <li>
-                      <!-- <span class="icon major {{ item.iconstyle }} {{ item.icon }}"></span> -->
-                      <span class="image {% cycle 'top' %}"><img src="{{ item.image }}" alt="" /></span>
-                      <!-- <span class="image"><img src="images/vehicles/ay_headshot.jpg" alt="varun" /></span> -->
-                      <a href={{item.link}} ><h3>{{ item.title }}</h3></a>
-                      <p>{{ item.description }}</p>
-                  </li>
-                  {% endfor %}
-              </ul>
+              <a href="{{ site.url }}" class="image avatar"><img class="editable" src="/images/avatar.jpg" alt="{{ site.author.name }}" /></a>
           </section>
 
         <footer>
