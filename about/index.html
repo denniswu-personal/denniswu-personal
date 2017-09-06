@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div id="main">
+    <article>
+        <header class="major">
+            <h2 class="post-title">About<a href="mailto:{{ site.email }}">
+                                  <span class="icon fa-envelope alt" style="font-size: 0.45em;"></a>
+            </h2>
+        </header>
+
+        
+        <section id="intro" class="main">
+              <div class="spotlight">
+                  <div class="content">
+                      <p>I'm a hardware engineer at Google working on camera systems, image processing, and image quality. Graduated from Stanford in March, 2017 with a maters degree in Electrical Engineering, I developed great passion in prototyping and building products. You can find my complete resume in the link below. <br />  <br /> 
+                        Not only do I work with cameras, it's also my one of my greatest interest. Photography has long been there with me as I traveled across the world. You can see some of my selected works <a href="/photography/">here</a><br />  <br /> 
+                        Born and raised in Taiwan, I'm the first in my family to cross the Pacific. Exploring the world as much as I can is my ultimate goal. Feel free to make comments and leave a message. 
+
+                      </p>
+                  </div>
+                  
+              </div>
+        </section>
+        <section id="school_logo" class="main">
+              <header class="major">
+                  <h2>Education</h2>
+              </header>
+              <ul class="features">
+                  {% for item in site._school_logo %}
+                  <li>
+                      <!-- <span class="icon major {{ item.iconstyle }} {{ item.icon }}"></span> -->
+                      <span class="image {% cycle 'top' %}"><img src="{{ item.image }}" alt="" /></span>
+                      <!-- <span class="image"><img src="images/vehicles/ay_headshot.jpg" alt="varun" /></span> -->
+                      <a href={{item.link}} ><h3>{{ item.title }}</h3></a>
+                      <p>{{ item.description }}</p>
+                  </li>
+                  {% endfor %}
+              </ul>
+          </section>
+
+        <footer>
+        </footer>
+
+    </article>
+
